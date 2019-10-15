@@ -12,6 +12,9 @@ public class DetailIlmuan extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_ilmuan);
+        
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
 
         String nama = getIntent().getStringExtra("putNama");
         String url = getIntent().getStringExtra("putUrl");
